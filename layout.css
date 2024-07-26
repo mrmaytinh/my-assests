@@ -1,0 +1,511 @@
+@font-face { font-family: 'l33bo-med'; src: url('../fonts/002.eot'); 
+src: url('../fonts/002.eot?#iefix') format('embedded-opentype'), 
+url('../fonts/002.woff') format('woff'), 
+url('../fonts/002.ttf') format('truetype'); 
+font-weight: normal; font-style: normal; font-variant: normal; }
+@font-face { font-family: 'l33bo-reg'; src: url('../fonts/001.eot');
+src: url('../fonts/001.eot?#iefix') format('embedded-opentype'), url('../fonts/001.woff') format('woff'), url('../fonts/001.ttf') format('truetype'); font-weight: normal; font-style: normal; font-variant: normal; }
+div.sitekey-widget-layout, div.sitekey-widget-layout div {float: none;font-family:Verdana, Arial, Helvetica, sans-serif;}
+div.sitekey-widget-layout div, 
+div.sitekey-widget-layout form, 
+div.sitekey-widget-layout input{margin:0;padding:0; text-align:left}
+div.sitekey-widget-layout input, 
+div.sitekey-widget-layout select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+div.sitekey-widget-layout img{border:0 none;}
+div.sitekey-widget-layout label {line-height:1.2; margin: 0; }
+
+div.sitekey-widget-layout a{color:#36C;text-decoration:none; padding:0; background:none;}
+div.sitekey-widget-layout a:visited{color:#651C7E;}
+div.sitekey-widget-layout a:hover{color:#00F;text-decoration:underline;}
+div.sitekey-widget-layout a:focus{outline:none;color:#00F;text-decoration:underline;}
+div.sitekey-widget-layout .skw-btn-bofa-blue:focus{color:#fff;}
+
+div.sitekey-widget-layout .skw-letter-spacing-narrow{letter-spacing:-1px; font-weight:normal;}
+div.sitekey-widget-layout .skw-hide{display:none !important;}
+div.sitekey-widget-layout .skw-clearboth{clear:both;height:1px;visibility:hidden;line-height:1pt;font-size:0px;}
+.skw-ada-hidden{position:absolute;left:0px;top:-5000px;width:1px;height:1px;overflow:hidden;}
+div.sitekey-widget-layout .skw-mrt-10{margin-right:10px;}
+div.sitekey-widget-layout .skw-float-left{float:left;}
+div.sitekey-widget-layout .sitekey-widget-module,
+div.sitekey-widget-layout .sitekey-widget-safepass-module,
+div.sitekey-widget-layout #skw-error-div {font-family:Verdana, Arial, Helvetica, sans-serif;color:#333;line-height:1.2;}
+div.sitekey-widget-layout #rsa-fso-device-token {display: none;}
+div.sitekey-widget-layout #skw-error-div .skw-error-title{padding: 0 0 10px 31px;background:url(../img/skw-error-small.gif) 0 0 no-repeat;font-size:12px;font-weight:bold;color:#d4001a;}
+div.sitekey-widget-layout .skw-ada-hidden{position:absolute;left:0px;top:-5000px;width:1px;height:1px;overflow:hidden;}
+
+div.sitekey-widget-layout a.skw-button-gray, 
+div.sitekey-widget-layout a.skw-button-gray:hover, 
+div.sitekey-widget-layout a.skw-button-gray:active, 
+div.sitekey-widget-layout a.skw-button-gray:visited{background:transparent url('../img/skw-button-sprite.png') right -240px no-repeat;color:#666;}
+div.sitekey-widget-layout a.skw-button-gray:hover, 
+div.sitekey-widget-layout a.skw-button-gray:focus{background:transparent url('../img/skw-button-sprite.png') right -264px no-repeat;}
+div.sitekey-widget-layout a.skw-button-gray:active{background:transparent url('../img/skw-button-sprite.png') right -288px no-repeat;color:#fff;}
+div.sitekey-widget-layout a.skw-button-gray span, 
+div.sitekey-widget-layout a.skw-button-gray:hover span, 
+div.sitekey-widget-layout a.skw-button-gray:active span, 
+div.sitekey-widget-layout a.skw-button-gray:focus span{background:transparent url('../img/skw-button-sprite.png') 0 -72px no-repeat;}
+div.sitekey-widget-layout a.skw-button-gray:hover span, 
+div.sitekey-widget-layout a.skw-button-gray:focus span{background-position:0 -96px;}
+div.sitekey-widget-layout a.skw-button-gray:active span{background-position:0 -120px;}
+div.sitekey-widget-layout a.skw-button-blue, 
+div.sitekey-widget-layout a.skw-button-blue:hover, 
+div.sitekey-widget-layout a.skw-button-blue:active, 
+div.sitekey-widget-layout a.skw-button-blue:visited{background:transparent url('../img/skw-button-sprite.png') right -168px no-repeat;color:#fff;}
+div.sitekey-widget-layout a.skw-button-blue:hover, 
+div.sitekey-widget-layout a.skw-button-blue:focus{background:transparent url('../img/skw-button-sprite.png') right -192px no-repeat;}
+div.sitekey-widget-layout a.skw-button-blue:active{background:transparent url('../img/skw-button-sprite.png') right -216px no-repeat;}
+div.sitekey-widget-layout a.skw-button-blue span, 
+div.sitekey-widget-layout a.skw-button-blue:hover span, 
+div.sitekey-widget-layout a.skw-button-blue:active span, 
+div.sitekey-widget-layout a.skw-button-blue:focus span{background:transparent url('../img/skw-button-sprite.png') 0 0 no-repeat;}
+div.sitekey-widget-layout a.skw-button-blue:hover span, 
+div.sitekey-widget-layout a.skw-button-blue:focus span{background-position:0 -24px;}
+div.sitekey-widget-layout a.skw-button-blue:active span{background-position:0 -48px;}
+div.sitekey-widget-layout a.skw-button-common, 
+div.sitekey-widget-layout a.skw-button-common:hover, 
+div.sitekey-widget-layout a.skw-button-common:active, 
+div.sitekey-widget-layout a.skw-button-common:visited{display:block;float:left;height:24px;padding-right:13px;text-decoration:none;margin-bottom:5px;}
+div.sitekey-widget-layout a.skw-button-common:hover, 
+div.sitekey-widget-layout a.skw-button-common:focus{outline:none;text-decoration:none;}
+div.sitekey-widget-layout a.skw-button-common:active{outline:none;}
+div.sitekey-widget-layout a.skw-button-common span, 
+div.sitekey-widget-layout a.skw-button-common:hover span, 
+div.sitekey-widget-layout a.skw-button-common:active span, 
+div.sitekey-widget-layout a.skw-button-common:focus span,  
+div.sitekey-widget-layout a.skw-button-common:visited span{padding:4px 0 6px 15px;font-size:12px;font-weight:bold;display:block;white-space:nowrap;line-height:14px;}
+div.sitekey-widget-layout a.skw-button-common-disable, 
+div.sitekey-widget-layout a.skw-button-common-disable:hover,
+div.sitekey-widget-layout a.skw-button-common-disable:active,
+div.sitekey-widget-layout a.skw-button-common-disable:focus,
+div.sitekey-widget-layout a.skw-button-common-disable:visited{display:block;float:left;height:24px;padding-right:15px;text-decoration:none; cursor:default;color:#acacac;
+background:transparent url('../img/skw-button-sprite.png') right -312px no-repeat;}
+div.sitekey-widget-layout a.skw-button-common-disable span, 
+div.sitekey-widget-layout a.skw-button-common-disable:hover span,
+div.sitekey-widget-layout a.skw-button-common-disable:active span,
+div.sitekey-widget-layout a.skw-button-common-disable:focus span,
+div.sitekey-widget-layout a.skw-button-common-disable:visited span{padding:4px 0 6px 15px;font-size:12px;font-weight:bold;display:block;white-space:nowrap;line-height:14px; cursor:default;
+background:transparent url('../img/skw-button-sprite.png') 0 -144px no-repeat!important;}
+
+/************************************************************************/
+/* SKW Shared Skin Styles */
+div.sitekey-widget-layout .skw-content{background:#fff;padding:10px;/*position:relative !important;*/}
+div.sitekey-widget-layout .skw-content a.button {color:#333333 !important;text-decoration:none;}
+div.skw-quirks-mode div.sitekey-widget-layout .skw-content{*padding-left: 9px; *padding-right: 8px;}
+div.sitekey-widget-layout label{display:block;font-weight:bold;font-size:11px;padding-bottom:5px;zoom:1;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module p{zoom:1;}
+div.sitekey-widget-layout input[type=text],div.sitekey-widget-layout input[type=password]{border:1px solid #7f9db9;padding:2px 5px;font-size:11px;*font-size:12px;}
+div.sitekey-widget-layout .skw-olb-id-display{font-size:11px;padding-bottom:20px;zoom:1;}
+div.sitekey-widget-layout .skw-sitekey-text{font-size:11px;font-weight:bold;padding-bottom:8px;zoom:1;}
+div.sitekey-widget-layout .skw-sitekey-image-display img{display:block;}
+div.sitekey-widget-layout .skw-checkbox-container{margin-bottom:17px;*display:inline-block;*margin:-1px 0 14px -4px;}
+div.sitekey-widget-layout .skw-checkbox-container input[type=checkbox] {position: relative;top: 1px; float:left;margin:0;*margin-top:-4px;}
+div.skw-quirks-mode .skw-checkbox-container input[type=checkbox] { *margin-bottom:10px;vertical-align:top;}
+
+div.sitekey-widget-layout .skw-checkbox-container label{float:left;font-weight:normal;padding:0 0 0 5px;*padding-left:2px;width:85%;}
+div.skw-quirks-mode div.sitekey-widget-layout .skw-checkbox-container label{*float:none;*display:inline-block;}
+div.sitekey-widget-layout .skw-help-link{display:block;font-size:10px;}
+div.sitekey-widget-layout .skw-info-message{padding:9px 7px;border:1px solid #edefe3;background-color:#f8faed;margin-bottom:17px;zoom:1;}
+div.sitekey-widget-layout .skw-info-message .skw-info-content{padding: 0 0 5px 27px;background:url(../img/skw-sprite.png) -145px -46px no-repeat;line-height:1.2;}
+div.sitekey-widget-layout .skw-info-message .skw-info-title{font-weight:bold;padding-bottom:8px;}
+div.sitekey-widget-layout .skw-error-message{padding:9px 7px 6px;border:1px solid #f8edf3;background-color:#fff4f9;margin-bottom:12px;zoom:1;}
+div.sitekey-widget-layout .skw-error-message .skw-error-content{padding-left:31px;background:url(../img/skw-error-small.gif) 0 0 no-repeat;line-height:1.2;}
+div.sitekey-widget-layout .skw-error-message .skw-error-title{font-weight:bold;padding-bottom:8px;color:#d4001a;font-size:10px!important;}
+/* END SKW Shared Skin Styles *******************************************/
+
+/************************************************************************/
+/* SKW Enter ID Skin Styles */
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-link-container{padding-bottom:14px;*display:inline-block;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-link-container a{display:block;font-size:9px;float:left;padding-right:6px;margin-right:6px;background:url(../img/skw-sprite.png) right -27px no-repeat;white-space:nowrap;}
+html:lang(es-US) div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-link-container a{margin-right:4px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-link-container a.skw-last-link{padding-right:0;margin-right:0;background:none;float: right;*white-space:nowrap}
+div.skw-slim div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-link-container a.skw-last-link{margin-top:5px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-enter-id-container{margin-bottom:8px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-enter-id-container input{border:1px solid #696969;width:153px;font-size:11px;padding:3px 5px 5px;*margin-top:-1px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-enter-password-container{margin-bottom:8px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-enter-password-container input{border:1px solid #696969;width:153px;font-size:11px;padding:3px 5px 5px;*margin-top:-1px;}
+.skw-slim div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-enter-id-container input {width:136px;}
+div.skw-quirks-mode .sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-enter-id-container input{*height:24px; *width:165px;}
+div.skw-slim .skw-quirks-mode div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-enter-id-container input {width:148px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-help-link{margin-bottom:13px;zoom:1;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-change-id{display:block;padding-bottom:18px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-enter-id-container select{width:165px;font-size:11px;*font-size:12px;padding:1px; margin-bottom: 15px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-checkbox-container input{float:left;*margin-top:-3px;}
+div.skw-slim div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-checkbox-container  label{*width: 95%;}
+div.skw-slim div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-enter-id-container select{width:148px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-error-message{margin-top:2px;width:auto;}
+.skw-slim div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-error-message{width:132px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-info-message{margin-top:2px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-signin-help-container .skw-help-link, div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-signin-help-container .skw-help-links a{margin-bottom: 0px;margin-top:5px;padding-left:11px;display:inline-block;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-signin-help-container .skw-help-link.collapsed{background: url(../img/sign-in-sprite.png) 0 -86px no-repeat;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-signin-help-container .skw-help-link.expanded{background: url(../img/sign-in-sprite.png) 0 -121px no-repeat;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-signin-help-container .skw-help-links{margin: 5px 0 0;padding-left: 0;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-signin-help-container .skw-help-links li{list-style-type: none;margin-bottom: 5px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container img{margin:5px 0 0 10px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container .enroll-link-container{padding-top:6px;}
+div.sitekey-widget-layout .skw-error-message .skw-error-title p{color: #333333;font-weight: normal;margin-top: 5px;}
+/*188px styles*/
+.skw-slim div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container{margin-left:-6px;*margin-left:0;}
+div.skw-slim  div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container a.skw-button-common span, 
+.skw-slim div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container a.skw-button-common:hover span, 
+.skw-slim div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container a.skw-button-common:active span, 
+.skw-slim  div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container a.skw-button-common:focus span, 
+.skw-slim div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container a.skw-button-common:visited span
+div.skw-slim  div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container a.skw-button-common-disable span, 
+div.skw-slim  div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container a.skw-button-common-disable:hover span,
+div.skw-slim  div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container a.skw-button-common-disable:active span,
+div.skw-slim  div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container a.skw-button-common-disable:focus span,
+div.skw-slim  div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container a.skw-button-common-disable:visited span{*font-size:10px;}
+
+/* END SKW Enter ID Skin Styles *****************************************/
+#pass-mark-flash{zoom:1;font-size:0;}
+
+/* SKW Reset Status Skin Styles */
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-link-container{padding-bottom:14px;*display:inline-block;}
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-link-container a{display:block;font-size:9px;float:left;padding-right:6px;margin-right:6px;background:url(../img/skw-sprite.png) right -27px no-repeat;}
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-link-container a.skw-last-link{padding-right:0;margin-right:0;background:none;}
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-enter-id-container{margin-bottom:8px;}
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-enter-id-container input,
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-password-container input{border:1px solid #696969;width:153px;font-size:11px;padding:3px 5px 5px;}
+.skw-slim div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-enter-id-container input,
+.skw-slim div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-password-container input{width:136px;}
+div.skw-quirks-mode .sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-enter-id-container input,
+div.skw-quirks-mode .sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-password-container input{*margin-top:-1px; *height:24px; width:163px;}
+div.skw-slim .skw-quirks-mode div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-password-container input{width:148px;}
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-help-link{margin-bottom:13px;zoom:1;}
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-input-container label{float:left;padding-bottom:4px;}
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-password-container {width:163px; margin-bottom: 13px;}
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-password-container label{float:left;padding-bottom:4px;}
+div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-password-container a{display:block;float:right;font-size:9px;padding-top:2px;}
+div.skw-slim div.sitekey-widget-layout .sitekey-widget-module .reset-status-skin .skw-password-container a{letter-spacing:-1px;}
+
+/* END SKW Reset Status Skin Styles *****************************************/
+
+
+/************************************************************************/
+/* SKW Confirm Sitekey Vertical Skin Styles */
+div.sitekey-widget-layout .sitekey-widget-module .confirm-sk-vrt-skin .skw-sitekey-image-display{margin-bottom:21px;}
+div.sitekey-widget-layout .sitekey-widget-module .confirm-sk-vrt-skin .skw-sitekey-image-display img{width:100px; height:100px;}
+
+/* END SKW Confirm Sitekey Vertical Skin Styles *****************************************/
+
+/* SKW Challenge Question Vertical Skin Styles */
+
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-vrt-skin .skw-help-link{margin-bottom:21px;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-vrt-skin .skw-help-link{margin-bottom:21px;*display:inline-block;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-vrt-skin .skw-input-container input{margin-bottom:13px;width:153px;}
+div.skw-quirks-mode .sitekey-widget-layout .sitekey-widget-module .chal-quest-vrt-skin .skw-input-container input{width:163px;}
+div.skw-slim div.sitekey-widget-layout .sitekey-widget-module .chal-quest-vrt-skin .skw-input-container input{width:136px;}
+div.skw-slim .skw-quirks-mode div.sitekey-widget-layout .sitekey-widget-module .chal-quest-vrt-skin .skw-input-container input{width:148px;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-vrt-skin .skw-help-link{margin-bottom:21px;*display:inline-block;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-vrt-skin .skw-checkbox-container{margin-bottom:22px;*margin:-1px 0 22px -4px;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-vrt-skin .skw-checkbox-container input{margin:2px 0 0 0;*margin-top:-2px;float:left;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-vrt-skin .skw-input-container .add-sec-text{margin-bottom: 13px;font-size: 11px;}
+
+/* END SKW Challenge Question Vertical Skin Styles *****************************************/
+
+/************************************************************************/
+/* SKW Confirm Sitekey Horizontal Skin Styles */
+div.sitekey-widget-layout .sitekey-widget-module .confirm-sk-hrz-skin .skw-sitekey-image-display{float:left;margin-right:20px;}
+div.sitekey-widget-layout .sitekey-widget-module .confirm-sk-hrz-skin .skw-sitekey-image-display img{width:100px; height:100px;}
+
+div.sitekey-widget-layout .sitekey-widget-module .confirm-sk-hrz-skin .skw-btn-container{float:left;margin-top:25px;}
+/* END SKW Confirm Sitekey Horizontal Skin Styles *****************************************/
+
+/* SKW Challenege Question Horizontal Skin Styles */
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-olb-id-display{padding-bottom:18px;zoom:1;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-info-message{float:left;width:150px;margin:0 20px 0 0;}
+div.skw-quirks-mode .sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-info-message{*width:160px;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-input-container{margin-top:-2px;width:235px;}
+div.skw-quirks-mode .sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-input-container {width:240px;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-input-container input{margin-bottom:13px;width:220px;}
+div.skw-quirks-mode .sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-input-container input{width:230px;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-help-link{margin-bottom:22px;font-size:9px;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-checkbox-container{margin-bottom:20px;*margin:-1px 0 20px -4px;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-checkbox-container input{margin:2px 0 0 0;*margin-top:-2px;float:left;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-checkbox-container label{width:215px;}
+div.sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-input-container .add-sec-text{margin-bottom: 13px;font-size: 11px;}
+div.skw-quirks-mode .sitekey-widget-layout .sitekey-widget-module .chal-quest-hrz-skin .skw-checkbox-container label{*width:200px;}
+
+
+/* END SKW Challenge Question Horizontal Skin Styles *****************************************/
+
+/************************************************************************/
+/* SKW w/ Safepass Enter Passcode Horizontal Skin Styles */
+div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin .skw-hrz-left{float:left; max-width:220px;}
+div.skw-quirks-mode div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin .skw-hrz-left{*width:200px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin .skw-hrz-right{float:left;margin:0 10px 0 20px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin .skw-sitekey-image-display{float:left;margin-right:20px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin .skw-input-container{float:left;margin-top:8px;width:163px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin .skw-input-container label{float:left;padding-bottom:4px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin .skw-input-container a.skw-reset{display:block;float:right;font-size:9px;padding-top:2px;*margin-right:20px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin .skw-input-container input{margin-bottom:15px;width:153px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin #safepass-widget{width:169px;height:236px;border:1px solid #ccc;float:left;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin #skw-safepass-no-device{display:block;float:left;font-size:9px;margin-top:10px}
+div.skw-quirks-mode div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin #skw-safepass-no-device{*width:220px;}
+/* END SKW w/ Safepass Enter Passcode Horizontal Skin Styles *****************************************/
+
+
+/************************************************************************/
+/* SKW w/ Safepass Reset Sitekey Horizontal Skin Styles (very similar to enter pass, but with no SK image)*/
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-hrz-skin .skw-hrz-left{float:left; max-width:220px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-hrz-skin .skw-hrz-right{float:left;margin:0 10px 0 20px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-hrz-skin .skw-sitekey-image-display{float:left;margin-right:20px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-hrz-skin .skw-input-container{float:left;margin-top:8px; width:163px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-hrz-skin .skw-input-container label{float:left;padding-bottom:4px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-hrz-skin .skw-input-container a.skw-reset{display:block;float:right;font-size:9px;padding-top:2px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-hrz-skin .skw-input-container input{margin-bottom:15px;width:153px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-hrz-skin #safepass-widget{width:169px;height:236px;border:1px solid #ccc;float:left;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-hrz-skin #skw-safepass-no-device{display:block;float:right;font-size:9px;margin-top:10px}
+/* END SKW w/ Safepass Reset Sitekey Horizontal Skin Styles *****************************************/
+
+
+/************************************************************************/
+/* SKW Safepass Challenege Question Horizontal Skin Styles */
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-hrz-left{float:left;overflow:hidden;max-width:220px}
+div.skw-quirks-mode div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-hrz-left{*width:220px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-hrz-right{float:left;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-olb-id-display{padding-bottom:18px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-info-message{float:left;width:145px;margin:0 20px 0 0;}
+div.skw-quirks-mode div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-info-message{*width: 159px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-input-container{margin-top:-2px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-input-container input{margin-bottom:13px;width:220px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-help-link{margin-bottom:22px;font-size:9px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-checkbox-container{margin-top:20px;*margin:20px 0 22px -4px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-checkbox-container input{margin:2px 0 0 0;*margin-top:-2px;float:left;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin .skw-checkbox-container label{width:200px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin #safepass-widget{width:169px;height:236px;border:1px solid #ccc;margin:0 10px 0 20px;float:left;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin #skw-safepass-no-device{display:block;float:left;font-size:9px;margin:10px 10px 12px -22px;}
+div.skw-quirks-mode div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin #skw-safepass-no-device{*margin: 10px 0px 12px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-hrz-skin #skw-chal-ques-submit{margin-left:20px;}
+/* END Safepass SKW Challenge Question Horizontal Skin Styles *****************************************/
+
+/************************************************************************/
+/* SKW w/ Safepass Reset Sitekey Vertical Skin Styles */
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-vrt-skin .skw-sitekey-image-display{margin-bottom:21px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-vrt-skin .skw-input-container label{float:left;padding-bottom:4px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-vrt-skin .skw-input-container a{display:block;float:right;font-size:9px;padding-top:2px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-vrt-skin .skw-input-container input{margin-bottom:15px;width:153px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-vrt-skin .skw-safepass-container{margin:25px 0 10px -1px;}
+div.skw-slim div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-vrt-skin .skw-safepass-container{margin:25px 0 10px -10px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-vrt-skin .skw-safepass-container #safepass-widget{width:169px;height:236px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .sk-reset-vrt-skin .skw-safepass-container a{display:block;font-size:9px;margin-top:10px;}
+/* END SKW w/ Safepass Reset SK Vertical Skin Styles *****************************************/
+
+/************************************************************************/
+/* SKW Challenge Question Vertical Skin Styles */
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-vrt-skin .skw-input-container input{margin-bottom:13px;width:153px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-vrt-skin .skw-help-link{margin-bottom:21px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-vrt-skin .skw-safepass-container{margin:0 0 23px -1px;}
+div.skw-slim div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-vrt-skin .skw-safepass-container{margin:0 0 23px -10px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-vrt-skin .skw-safepass-container #safepass-widget{width:169px;height:236px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-vrt-skin .skw-safepass-container a{display:block;font-size:9px;margin-top:10px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .skw-safepass-container .expired-code a {
+    display: inline;
+}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-vrt-skin .skw-checkbox-container{margin-bottom:22px;*margin:-1px 0 22px -4px;}
+div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-vrt-skin .skw-checkbox-container input{margin:2px 0 0 0;*margin-top:-2px;float:left;}
+
+/* END SKW Challenge Question Vertical Skin Styles *****************************************/
+
+/************************************************************************/
+/* SKW Border & Corner Common Styles */
+div.sitekey-widget-layout .skw-tleft,
+div.sitekey-widget-layout .skw-tcenter,
+div.sitekey-widget-layout .skw-tright{float:left;height:7px;font-size:0;}
+div.sitekey-widget-layout .skw-tleft,
+div.sitekey-widget-layout .skw-tright{width:7px;}
+div.sitekey-widget-layout .skw-bleft,
+div.sitekey-widget-layout .skw-bcenter,
+div.sitekey-widget-layout .skw-bright{float:left;height:10px;font-size:0;}
+div.sitekey-widget-layout .skw-bleft,
+div.sitekey-widget-layout .skw-bright{width:10px;}
+div.sitekey-widget-layout .skw-tinner{position:absolute;height:7px;width:7px;top:35px;font-size:0;}
+div.sitekey-widget-layout .skw-tlcorner{left:9px;}
+div.sitekey-widget-layout .skw-trcorner{right:9px;}
+div.sitekey-widget-layout .skw-binner{position:absolute;height:7px;width:7px;bottom:-1px;}
+div.skw-quirks-mode .sitekey-widget-layout .skw-binner{*bottom:-6px;}
+div.sitekey-widget-layout .skw-blcorner{left:9px;}
+div.sitekey-widget-layout .skw-brcorner{right:9px;}
+div.sitekey-widget-layout .skw-main-border{position:relative;padding:36px 10px 0;margin-top:-2px;zoom:1;}
+div.sitekey-widget-layout .skw-close{position:absolute;height:5px;width:5px;top:-2px;right:5px;}
+div.sitekey-widget-layout .skw-close:focus{border:1px solid #333;}
+div.sitekey-widget-layout a.skw-title-link{background:none;position:absolute;color:#fff;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;top:11px;left:13px;line-height:1.2;}
+div.sitekey-widget-layout h2{margin:0; padding:0; font-size:100%;	font-weight:normal; display:inline;color:#fff;}
+div.sitekey-widget-layout a.skw-title-link {cursor:pointer;text-decoration:none;} 
+div.sitekey-widget-layout a.skw-title-link:visited {text-decoration:none;outline:none;color:#fff;} 
+div.sitekey-widget-layout a.skw-title-link:hover {text-decoration:none;outline:none;color:#fff;} 
+div.sitekey-widget-layout a.skw-title-link:focus {text-decoration:none;color:#fff;border:1px dotted #333333;} 
+div.sitekey-widget-layout .skw-logo{position:absolute;height:17px;width:36px;top:8px;right:10px;}
+div.sitekey-widget-layout .skw-text{color:#333333;font-weight:normal;}
+/* END SKW Border & Corner Common Styles ********************************/
+
+/************************************************************************/
+/* SKW Red Styles *******************************************************/
+div.sitekey-widget-layout .skw-red .skw-tleft{background:url(../img/red-sprite.png) 0 -51px no-repeat;}
+div.sitekey-widget-layout .skw-red .skw-tcenter{background:url(../img/red-sprite.png) 0 -96px repeat-x;}
+div.sitekey-widget-layout .skw-red .skw-tright{background:url(../img/red-sprite.png) -7px -51px no-repeat;}
+div.sitekey-widget-layout .skw-red .skw-bleft{background:url(../img/red-sprite.png) 0 -81px no-repeat;}
+div.sitekey-widget-layout .skw-red .skw-btm-border .skw-bcenter{background:#be0e0d;}
+div.sitekey-widget-layout .skw-red .skw-bright{background:url(../img/red-sprite.png) -22px -81px no-repeat;}
+div.sitekey-widget-layout .skw-red .skw-tlcorner{background:url(../img/red-sprite.png) 0 -63px no-repeat;}
+div.sitekey-widget-layout .skw-red .skw-trcorner{background:url(../img/red-sprite.png) -7px -63px no-repeat;}
+div.sitekey-widget-layout .skw-red .skw-blcorner{background:url(../img/red-sprite.png) -9px -75px no-repeat;}
+div.sitekey-widget-layout .skw-red .skw-brcorner{background:url(../img/red-sprite.png) -16px -75px no-repeat;}
+div.sitekey-widget-layout .skw-red .skw-main-border{background:#be0e0d url(../img/red-sprite.png) 0 -103px repeat-x;}
+div.sitekey-widget-layout .skw-red .skw-close{background:url(../img/red-sprite.png) 0 -19px no-repeat;}
+div.sitekey-widget-layout .skw-red .skw-logo{background:url(../img/red-sprite.png) 0 -29px no-repeat;}
+/* END SKW Red Styles ***************************************************/
+
+/* SKW Gray Styles *******************************************************/
+div.sitekey-widget-layout .skw-gray .skw-tleft{background:url(../img/skw-gray-sprite.png) 0 -51px no-repeat;}
+div.sitekey-widget-layout .skw-gray .skw-tcenter{background:url(../img/skw-gray-sprite.png) 0 -96px repeat-x;}
+div.sitekey-widget-layout .skw-gray .skw-tright{background:url(../img/skw-gray-sprite.png) -7px -51px no-repeat;}
+div.sitekey-widget-layout .skw-gray .skw-bleft{background:url(../img/skw-gray-sprite.png) 0 -81px no-repeat;}
+div.sitekey-widget-layout .skw-gray .skw-btm-border .skw-bcenter{background:#4d4f53;font-size:0;}
+div.sitekey-widget-layout .skw-gray .skw-bright{background:url(../img/skw-gray-sprite.png) -22px -81px no-repeat;}
+div.sitekey-widget-layout .skw-gray .skw-tlcorner{background:url(../img/skw-gray-sprite.png) 0 -63px no-repeat;}
+div.sitekey-widget-layout .skw-gray .skw-trcorner{background:url(../img/skw-gray-sprite.png) -7px -63px no-repeat;}
+div.sitekey-widget-layout .skw-gray .skw-blcorner{background:url(../img/skw-gray-sprite.png) -9px -75px no-repeat;}
+div.sitekey-widget-layout .skw-gray .skw-brcorner{background:url(../img/skw-gray-sprite.png) -16px -75px no-repeat;}
+div.sitekey-widget-layout .skw-gray .skw-main-border{background:#4d4f53 url(../img/skw-gray-sprite.png) 0 -103px repeat-x;}
+div.sitekey-widget-layout .skw-gray .skw-close{background:url(../img/skw-gray-sprite.png) 0 -19px no-repeat;}
+div.sitekey-widget-layout .skw-gray .skw-logo{background:url(../img/skw-gray-sprite.png) 0 -29px no-repeat;}
+/* END SKW Gray Styles ***************************************************/
+
+/* SKW Prospect Styles ***************************************************/
+div.sitekey-widget-layout a.skw-prospect-title-link{position:absolute;color:#fff;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;top:11px;left:13px;line-height:1.2;}
+div.sitekey-widget-layout a.skw-prospect-title-link {cursor:pointer;text-decoration:none;} 
+div.sitekey-widget-layout a.skw-prospect-title-link:visited {text-decoration:none;outline:none;color:#fff;} 
+div.sitekey-widget-layout a.skw-prospect-title-link:hover {text-decoration:none;outline:none;color:#fff;} 
+div.sitekey-widget-layout a.skw-prospect-title-link:focus {text-decoration:none;color:#fff;}
+div.sitekey-widget-layout span.skw-prospect-title{position:absolute;color:#fff;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;top:11px;left:13px;line-height:1.2;}
+/* END SKW Prospect Styles ***********************************************/
+
+/* Client Override */
+
+div.centralGreyCallout div.sitekey-widget-layout {
+	float:none;
+}
+div.centralCalloutColumnRight div.sitekey-widget-layout .skw-checkbox-container input[type=checkbox] {
+	 border:none;
+}
+.centralGreyCallout .centralCalloutColumnRight .accordionFormContent .sitekey-widget-layout .skw-main-border{*width:185px;}
+
+.floatLeft {float:left;}
+
+.page-margin .skw-quirks-mode div.sitekey-widget-layout .skw-content{padding:8px;}
+.sitekey-widget-display-module .stand-alone-skin .site-key .olb-sitekey-for-host div.sitekey-widget-layout .skw-content{
+	border:none;
+}
+.page-margin .skw-quirks-mode div.sitekey-widget-layout .sitekey-widget-safepass-module .chal-quest-vrt-skin .skw-safepass-container{margin: 0 0 23px 0;}
+/* End Client Override */
+
+/*Safepass*/
+*+html div.sitekey-widget-layout .sitekey-widget-safepass-module .enter-pass-hrz-skin #skw-safepass-no-device {margin-top:260px;float:none;}
+
+/*Security preferences vertical*/
+div.sitekey-widget-layout .sitekey-widget-module .sec-pref-skin .sec-pref-title{font-size: 12px;font-weight: bold;}
+div.sitekey-widget-layout .sitekey-widget-module .sec-pref-skin .sec-pref-para{margin:10px 0;}
+div.sitekey-widget-layout .sitekey-widget-module .sec-pref-skin .sec-pref-container{margin-bottm:8px;}
+div.sitekey-widget-layout .sitekey-widget-module .sec-pref-skin .radio-button-row{margin-bottom:10px;}
+div.sitekey-widget-layout .sitekey-widget-module .sec-pref-skin .radio-button-row input{float:left;border:none;width:auto;padding-top:3px;} 
+div.sitekey-widget-layout .sitekey-widget-module .sec-pref-skin .radio-button-row label{width:130px;display:inline;float:left;line-height:1.3em;font-size:11px;margin:0 0 0 5px;*margin:3px 0 0 2px;padding:0 6px 0 0;}
+div.sitekey-widget-layout .sitekey-widget-module .sec-pref-skin .radio-button-row .sec-pref-add-txt{padding-left: 17px;}
+div.sitekey-widget-layout .sitekey-widget-module .sec-pref-skin .sign-in-pref {margin-bottom: 10px;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container .lock {padding-left: 15px;background: url("../img/sign-in-sprite.png") no-repeat scroll 0 -4px transparent;}
+div.sitekey-widget-layout .sitekey-widget-module .enter-id-skin .skw-btn-container .disabled-lock {padding-left: 15px;background: url("../img/sign-in-sprite.png") no-repeat scroll 0 -46px transparent;}
+div.sitekey-widget-layout .skw-btn-bofa {
+	position: relative;
+	display: inline-block;
+	font: bold 15px/22px Arial, Helvetica, sans-serif;
+	color: #685e53;
+	padding: 5px 19px 7px;
+    margin-right:15px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none !important;
+	border: 1px solid #BCB2A4;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		     border-radius: 5px;
+	background-color: #eae6e1;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#f6f5f2), to(#e6e2dc));
+	background-image: -webkit-linear-gradient(#f6f5f2, #e6e2dc);
+	background-image: -moz-linear-gradient(#f6f5f2, #e6e2dc);
+	background-image: -ms-linear-gradient(#f6f5f2, #e6e2dc);
+	background-image: linear-gradient(#f6f5f2, #e6e2dc);
+}
+/* remove extra space in FF */
+div.sitekey-widget-layout .skw-btn-bofa::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+div.sitekey-widget-layout .skw-btn-bofa:visited {
+	color: #685e53;
+}
+div.sitekey-widget-layout .skw-btn-bofa:hover {
+	color: #685e53;
+	border: 1px solid #bbb1a3;
+	background-color: #E6E2DD;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#e6e2dc), to(#f6f5f2));
+	background-image: -webkit-linear-gradient(#e6e2dc, #f6f5f2);
+	background-image: -moz-linear-gradient(#e6e2dc, #f6f5f2);
+	background-image: -ms-linear-gradient(#e6e2dc, #f6f5f2);
+	background-image: linear-gradient(#e6e2dc, #f6f5f2);
+}
+div.sitekey-widget-layout .skw-btn-bofa.active, div.sitekey-widget-layout .skw-btn-bofa:active, .skw-btn-bofa:focus {
+	color: #fff;
+	border: 1px solid #9a8c7f;
+	background-color: #bbb1a3;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#8f8276), to(#bbb1a3));
+	background-image: -webkit-linear-gradient(#8f8276, #bbb1a3);
+	background-image: -moz-linear-gradient(#8f8276, #bbb1a3);
+	background-image: -ms-linear-gradient(#8f8276, #bbb1a3);
+	background-image: linear-gradient(#8f8276, #bbb1a3);
+}
+div.sitekey-widget-layout .skw-btn-bofa-small {
+	font-size: 13px;
+	padding: 1px 14px;
+}
+div.sitekey-widget-layout .skw-btn-bofa-blue {
+	color: #fff;
+	border-color: #124e89;
+	background-color: #0077be;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#007dc3), to(#0067b1));
+	background-image: -webkit-linear-gradient(#007dc3, #0067b1);
+	background-image: -moz-linear-gradient(#007dc3, #0067b1);
+	background-image: -ms-linear-gradient(#007dc3, #0067b1);
+	background-image: linear-gradient(#007dc3, #0067b1);
+}				
+div.sitekey-widget-layout .skw-btn-bofa-blue:visited {
+	color: #fff;
+}
+div.sitekey-widget-layout .skw-btn-bofa-blue:hover {
+	color: #fff;
+	border-color: #124e89;
+    background-color: #0068B2;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#0067b1), to(#007dc3));
+	background-image: -webkit-linear-gradient(#0067b1, #007dc3);
+	background-image: -moz-linear-gradient(#0067b1, #007dc3);
+	background-image: -ms-linear-gradient(#0067b1, #007dc3);
+	background-image: linear-gradient(#0067b1, #007dc3);
+}		
+div.sitekey-widget-layout .skw-btn-bofa-blue:active, div.sitekey-widget-layout .skw-btn-bofa-blue.active, div.sitekey-widget-layout .skw-btn-bofa-blue:focus {
+	background-color: #1b4ba4;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#153687), to(#1b4ba4));
+	background-image: -webkit-linear-gradient(#153687, #1b4ba4);
+	background-image: -moz-linear-gradient(#153687, #1b4ba4);
+	background-image: -ms-linear-gradient(#153687, #1b4ba4);
+	background-image: linear-gradient(#153687, #1b4ba4);
+}
+div.sitekey-widget-layout .skw-btn-disabled, div.sitekey-widget-layout .skw-btn-disabled:hover, div.sitekey-widget-layout .skw-btn-disabled:active, div.sitekey-widget-layout .skw-btn-disabled:focus, div.sitekey-widget-layout .skw-btn-disabled:visited, div.sitekey-widget-layout .skw-btn-bofa[disabled] {
+	cursor: default;
+   color: #bbb1a3;
+	text-shadow:none;
+   border-color: #bbb1a3;
+   background-color: #fafafa;
+   background-image: none;
+   -webkit-box-shadow: none;
+    	-moz-box-shadow: none;
+    	     box-shadow: none;
+}
